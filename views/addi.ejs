@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body style=" height: 1000px;background-repeat: no-repeat; background-size: contain;background-position:100%;
+background-image: linear-gradient(to bottom right, rgba(221, 145, 145, 0), rgb(50, 138, 133))">
+<h1 style="  text-align: center; color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;" class="anim">Create And Post Your Blog</h1>
+ <ul class="nav justify-content-center" style=" text-align: center;margin-top: 10px; margin-left: 40%; margin-bottom: 20px; margin-right: 40%;">
+    <li class="nav-item">
+        <a class="nav-link active" href="/" style="padding-right: 10px;font-family: cursive;">Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/users/logout" style="padding-right: 10px;font-family: cursive;">LogOut</a></li>
+</ul>
+ 
+ 
+  <div class="row mt-9">
+    <div class="col-md-12 m-auto">
+      <div class="card card-body">
+        <p class="h4 mb-4">Add your blog</p>
+    <form class="text-center border border-light p-5" action="/posts/store" method="POST"  >
+     
+        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Subject" name="subject" class="form-control" >
+      
+      
+        <div class="form-group">
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message" name="message" class="form-control" ></textarea>
+        </div>
+      
+        
+        <button class="btn btn-info btn-block" type="submit">Post your Blog</button>
+    
+    </form><br>
+</div></div></div>
+</body>
+</html>
